@@ -97,7 +97,7 @@ function dropBall() {
         ball.style.left = `${position.x}px`;
         ball.style.top = `${position.y}px`;
 
-        if (position.y < board.clientHeight - 15) {
+        if (position.y < board.clientHeight - 65) {
             requestAnimationFrame(updateBall);
         } else {
             const binIndex = Math.floor(position.x / (board.clientWidth / multipliers.length));
@@ -109,6 +109,12 @@ function dropBall() {
     updatePoints(-betAmount);
     updateBall();
 }
+
+createPegs();
+createBins();
+
+dropButton.addEventListener('click', dropBall);
+
 
 createPegs();
 createBins();
