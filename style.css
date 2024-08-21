@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#game-container {
+    margin: 20px auto;
+    width: 300px;
+    position: relative;
+}
+
+#plinko-board {
+    width: 300px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.peg {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ball {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#drop-ball {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
